@@ -1,0 +1,23 @@
+version: '3'
+services:
+  db:
+    container_name: postgres
+    image: postgis/postgis:12-master
+    volumes:
+      - pg_conf:/etc/postgresql
+      - pg_log:/var/log/postgresql
+      - pg_data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_PASSWORD: tVk2YXcc2a6cttqZq2cKGcJQN
+    networks:
+      - web
+
+
+volumes:
+  pg_data:
+  pg_conf:
+  pg_log:
+networks:
+  web:

@@ -1,0 +1,24 @@
+{
+  "name": "my-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "config": "^3.3.9",
+    "express": "^4.18.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "pg-promise": "^11.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
